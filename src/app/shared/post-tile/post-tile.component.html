@@ -27,6 +27,13 @@
       <button class="login" (click)="goToPost(post.id)">
         Read Post
       </button>
+      <div>
+        <div *ngIf="isLoggedIn">
+        <button class="login" (click)="goToDeletePost(post.id)">
+          Delete Post
+        </button>
+      </div>
+    </div>
     </span>
   </div>
   </div>

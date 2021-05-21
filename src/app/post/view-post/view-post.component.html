@@ -26,6 +26,7 @@
                 <textarea class="form-control" [formControlName]="'text'" placeholder="Your Thoughts?"></textarea>
               </div>
               <button type="submit" style="padding-top:px;margin-top:10px" class="login float-right">Comment</button>
+              <button type="login" style="padding-top:px;margin-top:10px" class="login float-right" (click)="goToDeletePost(post.id)">Delete Post</button>
             </form>
           </div>
           <div style="margin-top: 60px;" *ngFor="let comment of comments">

@@ -64,5 +64,10 @@ export class ViewPostComponent implements OnInit {
       throwError(error);
     });
   }
+  goToDeletePost(id: number):void{
+    this.router.navigateByUrl('/delete-post/' + id);
+  }
+
+
 
 }

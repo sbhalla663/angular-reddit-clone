@@ -27,6 +27,9 @@ export class PostService {
   getPostsBySubreddit(id: any): Observable<PostModel[]> {
     return this.http.get<PostModel[]>('http://localhost:8080/api/posts/by-subreddit/' + name);
   }
+  deletePost(id: number): Observable<PostModel> {
+    return this.http.delete<PostModel>('http://localhost:8080/api/posts/' + id);
+  }
 
  
 }

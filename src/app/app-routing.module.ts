@@ -6,6 +6,7 @@ import { SignupComponent} from './auth/signup/signup.component';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 import { HomeComponent } from './home/home.component';
 import { CreatePostComponent } from './post/create-post/create-post.component';
+import { DeletePostComponent } from './post/delete-post/delete-post.component';
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import { CreateSubredditComponent } from './subreddit/create-subreddit/create-subreddit.component';
 import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subreddits.component';
@@ -13,6 +14,8 @@ import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subred
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'view-post/:id', component: ViewPostComponent },
+  { path: 'delete-post/:id', component: DeletePostComponent },
+  { path: 'create-post/:id', component: CreatePostComponent },
   { path: 'user-profile/:name', component: UserProfileComponent, canActivate: [AuthGuard] },
   { path: 'list-subreddits', component: ListSubredditsComponent },
   { path: 'create-post', component: CreatePostComponent, canActivate: [AuthGuard] },

@@ -25,6 +25,7 @@ import { ViewPostComponent } from './post/view-post/view-post.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 import { TokenInterceptor } from './token-interceptor';
+import { DeletePostComponent } from './post/delete-post/delete-post.component';
 
 
 
@@ -44,6 +45,7 @@ import { TokenInterceptor } from './token-interceptor';
     ListSubredditsComponent,
     ViewPostComponent,
     UserProfileComponent,
+    DeletePostComponent,
   
 
   ],
